@@ -34,12 +34,12 @@ $ch = curl_init();
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
     curl_setopt($ch, CURLOPT_POSTFIELDS, [
-        'api_key' => '3d2b91113f4e53904894a9cbcd63423f',
-        'api_token' => '32128f9b51238d473ca0dc3dd36708a9',
+        'api_key' => $api_key,
+        'api_token' => $api_token,
         'cTracker' => $response[result][cTracker],
         'upload_key' => $response[result][upload_key],
         'url' => $url,
-        'mirrors[1]' => 13,  //you can edit this number with other server number
+        'mirrors[1]' => 13,  //you can edit this number with other mirrorace server number
         'mirrors[2]' => 63,
         'mirrors[3]' => 42,
         'mirrors[4]' => 72,
